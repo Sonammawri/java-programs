@@ -1,9 +1,10 @@
+// leetcode problem java sol of roman to integer
 class Solution {
     public int romanToInt(String s) {
         if(s== null|| s.length()==0){
             return 0;
         }
-        Map<Character,Integer> map = new HashMap<>();
+        Map<Character,Integer> map = new HashMap<>();// pushing all characters and corresponding frequency in hashmap
         map.put('I',1);
         map.put('V',5);
         map.put('X',10);
